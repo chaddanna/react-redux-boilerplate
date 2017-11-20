@@ -1,0 +1,41 @@
+body {
+  font: 300 1.4rem 'sans-serif';
+}
+
+h1 {
+  font: 300 3.6rem/4.2rem 'sans-serif';
+}
+
+h2 {
+  font: 300 2.4rem/3.8rem 'sans-serif';
+}
+
+h3 {
+  font: 300 2rem/2.4rem 'sans-serif';
+}
+
+h4 {
+  font: 300 1.6rem/2.6rem 'sans-serif';
+}
+
+h5 {
+  font: 300 1.4rem 'sans-serif';
+}
+
+h6 {
+  font: 300 1.2rem 'sans-serif';
+}
+
+p {
+  font: 300 1.4rem 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}

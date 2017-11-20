@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import logo from 'src/images/logo.svg';
 import './index.css';
@@ -13,5 +14,9 @@ class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  title: PropTypes.string
+};
 
 export default Header;

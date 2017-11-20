@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import './index.css';
 
@@ -11,5 +12,9 @@ class ContentBlock extends Component {
     );
   }
 }
+
+ContentBlock.propTypes = {
+  content: PropTypes.string
+};
 
 export default ContentBlock;

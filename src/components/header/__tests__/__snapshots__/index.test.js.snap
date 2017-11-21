@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component Smoke tests snapshot test 1`] = `
+<header
+  className="header"
+>
+  <img
+    alt="logo"
+    className="logo"
+    src="logo.svg"
+  />
+  <h1
+    className="title"
+  >
+    
+  </h1>
+</header>
+`;

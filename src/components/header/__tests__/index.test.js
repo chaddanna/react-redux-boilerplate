@@ -40,7 +40,7 @@ describe('Component', () => {
     });
 
     it("always renders 'header'", () => {
-      expect(getComponent().find('header.header')).toHaveLength(1);
+      expect(getComponent().find('.header')).toHaveLength(1);
     });
 
     describe("rendered 'header' with title set", () => {
@@ -51,7 +51,7 @@ describe('Component', () => {
       it('sets header with Test', () => {
         expect(
           getComponent()
-            .find('header.header')
+            .find('.header')
             .text()
         ).toBe(`${props.title}`);
       });

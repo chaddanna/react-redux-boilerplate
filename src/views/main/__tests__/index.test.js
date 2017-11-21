@@ -34,7 +34,7 @@ describe('Component', () => {
     });
 
     it("always renders 'main-view'", () => {
-      expect(getComponent().find('div.main-view')).toHaveLength(1);
+      expect(getComponent().find('.main-view')).toHaveLength(1);
     });
 
     it("always renders 'Header'", () => {

@@ -40,7 +40,7 @@ describe('Component', () => {
     });
 
     it("always renders 'content-block'", () => {
-      expect(getComponent().find('div.content-block')).toHaveLength(1);
+      expect(getComponent().find('.content-block')).toHaveLength(1);
     });
 
     describe("rendered 'content-block' with title set", () => {
@@ -51,7 +51,7 @@ describe('Component', () => {
       it('sets content-block with Test', () => {
         expect(
           getComponent()
-            .find('div.content-block')
+            .find('.content-block')
             .text()
         ).toBe(`${props.content}`);
       });

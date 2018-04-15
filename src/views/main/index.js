@@ -1,21 +1,16 @@
 import React, { Component } from 'react';
 
 import './index.css';
-import Header from 'src/components/header';
-import ContentBlock from 'src/components/content-block';
+import Header from '../../components/header';
 
 class Main extends Component {
-  render() {
-    const mainContent =
-      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-
-    return (
-      <div className="main-view">
-        <Header title="Main View" />
-        <ContentBlock content={mainContent} />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<div className="main-view">
+				<Header title="Starter" />
+			</div>
+		);
+	}
 }
 
 export default Main;

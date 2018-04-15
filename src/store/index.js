@@ -10,7 +10,7 @@ const initialState = {};
 const store = createStore(reducers, initialState, applyMiddleware(thunk));
 
 function Store(props) {
-  return <Provider store={store}>{props.children}</Provider>;
+  return <Provider store={ store }>{ props.children }</Provider>;
 }
 
 Store.propTypes = {

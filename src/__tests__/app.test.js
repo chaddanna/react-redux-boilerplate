@@ -10,12 +10,12 @@ describe('Component', () => {
   describe('Smoke tests', () => {
     it('snapshot test', () => {
       expect(
-        renderer.create(<Component {...props} />).toJSON()
+        renderer.create(<Component { ...props } />).toJSON()
       ).toMatchSnapshot();
     });
 
     it('renders without crashing', () => {
-      shallow(<Component {...props} />);
+      shallow(<Component { ...props } />);
     });
   });
 
@@ -23,7 +23,7 @@ describe('Component', () => {
     let mountedComponent;
     const getComponent = () => {
       if (!mountedComponent) {
-        mountedComponent = mount(<Component {...props} />).find(Component);
+        mountedComponent = mount(<Component { ...props } />).find(Component);
       }
 
       return mountedComponent;

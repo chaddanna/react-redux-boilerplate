@@ -1,0 +1,28 @@
+{
+  "extends": ["react"],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 8,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    }
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "react/jsx-curly-spacing": [
+      "error",
+      {
+      "when": "always",
+      "children": true,
+      "spacing": { "objectLiterals": "never" }
+      }
+    ],
+  }
+}

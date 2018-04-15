@@ -1,5 +1,5 @@
 {
-  "extends": ["react"],
+  "extends": ["@ifit/eslint-config/react"],
   "env": {
     "browser": true,
     "es6": true,
@@ -15,14 +15,6 @@
     }
   },
   "rules": {
-    "indent": ["error", 2],
-    "react/jsx-curly-spacing": [
-      "error",
-      {
-      "when": "always",
-      "children": true,
-      "spacing": { "objectLiterals": "never" }
-      }
-    ],
+    "react/jsx-curly-spacing": ["error", { "when": "always", "children": true, "spacing": { "objectLiterals": "never" } }],
   }
 }
